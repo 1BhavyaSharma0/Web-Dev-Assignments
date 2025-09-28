@@ -1,1 +1,21 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Short Bio</title>
+</head>
+<body>
+  <h1>Bhavya Sharma</h1>
+  <p>
+    Hi ! Myself Bhavya , I am currently studying Btech Cse (AI/ML) from Kr.Mangalam University . 
+    Being a learner I want to get myself to my best . I like working in team and connecting with experienced people .
+    Thats all about myself , 
+    Thank you ....
+  </p>
+  <hr>
+  <h2>My Interests</h2>
+  <p>
+    I am interested in software development , Machine Learning and my primary focus is that how can i solve problems Using AI and How AI can be used as an problem solver .
+  </p>
+</body>
+</html>
