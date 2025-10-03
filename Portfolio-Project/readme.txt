@@ -16,5 +16,4 @@ The purpose of this website is to:
 The project follows a clean, organized folder structure:
 portfolio-project/
 ├── Project.html          # The main portfolio page containing all content.
-└── images/
 └── profile.jpg     # Stores the profile image asset.
