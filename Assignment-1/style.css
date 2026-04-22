@@ -1,54 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 body {
-    background-color: #26a69a;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
-    color: #dcd8d8;
+  background: linear-gradient(to right, #b6d74a, #1eb1bc);
+  padding: 20px;
 }
 
-#AddEvent{
-    margin: 0px;
-    padding: 10px;
+.title {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 0.9rem; }
+.box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 380px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
 
 input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box; 
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
 }
 
-.btn-main {
-    background-color: #11c7b5;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
+button {
+  background: #3b37b1;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.btn-main:hover { background-color: #00695c; }
-
-.list-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+button:hover {
+  background: #5b21b6;
 }
 
-.event-item {
-    background: white;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-left: 5px solid #00897b;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
+.event-card {
+  background: #eef2ff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-#emptyMsg { text-align: center; color: #777; margin-top: 50px; }
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  font-size: 12px;
+  padding: 3px 6px;
+}
+
+.empty-text {
+  color: gray;
+  font-style: italic;
+}
