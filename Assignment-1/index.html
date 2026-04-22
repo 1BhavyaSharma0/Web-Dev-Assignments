@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Event Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Smart Event Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1> Smart Event Dashboard</h1>
+  <h1 class="title"> Smart Event Dashboard</h1>
 
-    <div id="AddEvent">
+  <div class="box">
+    <!-- FORM TO ADD EVENT-->
+    <div class="card form-card">
+      <h2>Add New Event</h2>
 
-        <label for="start">Event Title:</label>
-        <input type="text" id="start" name="trip-start">
-        
-        <label for="start">Event Date:</label>
-        <input type="date" id="start" name="trip-start">
+      <input type="text" id="eventTitle" placeholder="Event Title">
+      <input type="date" id="eventDate">
+      <select id="eventCategory">
+        <option value="">Select Category</option>
+        <option>Workshop</option>
+        <option>Seminar</option>
+        <option>Meeting</option>
+        <option>Hackathon</option>
+      </select>
+      <textarea id="eventDesc" placeholder="Description"></textarea>
 
-        <label for="courses">Choose a course:</label>
-        <select name="courses" id="courses">
-        <option value="Confrence">Confrence</option>
-        <option value="meet">Meeting</option>
-        <option value="Workshop">Workshop</option>
-        <option value="G-Meet">Google Meet</option>
-        </select>
-
-        </div>
-        <div>
-            <p>Description</p>
-            <textarea></textarea>
-        </div>
-        <button class="btn-main">Add Event</button>
-
+      <button id="addEventBtn">Add Event</button>
     </div>
 
-    <div>
-        <h1>My Events</h1>
-        <button class="btn-main">Clear All Events </button>
-        <button class="btn-main">Add Sample Events </button>
+    <!-- Events Section -->
+    <div class="card events-card">
+      <h2>My Events</h2>
+      <div id="eventList" class="event-list">
+        <button id="clearbtn">Clear All</button>
+        <button id="samplebtn">Add Sample Event</button>
+        <p class="empty-text">No events yet. Add your first event!</p>
+      </div>
     </div>
-      
+  </div>
 
-      <script src="script.js"></script>
+  
 
+  <script src="script.js"></script>
 </body>
 </html>
+        
