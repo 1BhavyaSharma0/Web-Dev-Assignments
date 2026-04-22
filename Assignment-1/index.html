@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Event Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1> Smart Event Dashboard</h1>
+
+    <div id="AddEvent">
+
+        <label for="start">Event Title:</label>
+        <input type="text" id="start" name="trip-start">
+        
+        <label for="start">Event Date:</label>
+        <input type="date" id="start" name="trip-start">
+
+        <label for="courses">Choose a course:</label>
+        <select name="courses" id="courses">
+        <option value="Confrence">Confrence</option>
+        <option value="meet">Meeting</option>
+        <option value="Workshop">Workshop</option>
+        <option value="G-Meet">Google Meet</option>
+        </select>
+
+        </div>
+        <div>
+            <p>Description</p>
+            <textarea></textarea>
+        </div>
+        <button class="btn-main">Add Event</button>
+
+    </div>
+
+    <div>
+        <h1>My Events</h1>
+        <button class="btn-main">Clear All Events </button>
+        <button class="btn-main">Add Sample Events </button>
+    </div>
+      
+
+      <script src="script.js"></script>
+
+</body>
+</html>
